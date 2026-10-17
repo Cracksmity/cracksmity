@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://cracksmity.dev"><img src="https://img.shields.io/badge/cracksmity.dev-full_network_map-C9A04A?style=for-the-badge&labelColor=0F1115" /></a>
   <a href="https://www.linkedin.com/in/victor-betancourt/"><img src="https://img.shields.io/badge/LinkedIn-Victor_Betancourt-1E5BD8?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0F1115" /></a>
-  <img src="https://img.shields.io/badge/AWS-Cloud_Practitioner-F08A1C?style=for-the-badge&logo=amazonwebservices&logoColor=white&labelColor=0F1115" />
+  <a href="https://www.credly.com/badges/bf6d148e-568b-467a-940e-ad5a1b315a0e/public_url"><img src="https://img.shields.io/badge/AWS-Cloud_Practitioner-F08A1C?style=for-the-badge&logo=amazonwebservices&logoColor=white&labelColor=0F1115" alt="AWS Certified Cloud Practitioner — verify on Credly" /></a>
 </p>
 
 <p align="center">
