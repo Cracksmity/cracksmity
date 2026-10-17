@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Cracksmity — I build tools for the people close to me">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1B1F26" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <path id="routeTeal" d="M600 260 H820 L940 140 H1180"/>
+    <path id="routeRed" d="M1180 60 H600"/>
+    <style>
+      .mono { font-family: 'Overpass Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .serif { font-family: Newsreader, Georgia, 'Times New Roman', serif; }
+      .line { fill: none; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .draw { stroke-dasharray: 1400; animation: draw 2.4s ease-out both; }
+      .d2 { animation-delay: .25s } .d3 { animation-delay: .5s } .d4 { animation-delay: .75s } .d5 { animation-delay: 1s } .d6 { animation-delay: 1.25s }
+      @keyframes draw { from { stroke-dashoffset: 1400; } to { stroke-dashoffset: 0; } }
+      .st { fill: #EEE8DC; stroke: #0F1115; stroke-width: 3; animation: pop .4s ease-out 2.2s both; }
+      @keyframes pop { from { opacity: 0; } to { opacity: 1; } }
+      .blink { animation: blink 1.6s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" rx="16" fill="#0F1115"/>
+  <rect width="1200" height="360" rx="16" fill="url(#grid)"/>
+
+  <!-- network -->
+  <path class="line draw"    stroke="#D3311F" d="M600 60 H1180"/>
+  <path class="line draw d2" stroke="#1E5BD8" d="M600 140 H760 L880 260 H1180"/>
+  <path class="line draw d3" stroke="#12A5A5" d="M600 260 H820 L940 140 H1180"/>
+  <path class="line draw d4" stroke="#E5559B" d="M700 330 V30"/>
+  <path class="line draw d5" stroke="#C9A04A" d="M1010 330 V30"/>
+  <path class="line draw d6" stroke="#7B3FD0" d="M1060 330 L1180 210"/>
+
+  <!-- interchanges -->
+  <circle class="st" cx="700"  cy="60"  r="9"/>
+  <circle class="st" cx="700"  cy="140" r="9"/>
+  <circle class="st" cx="700"  cy="260" r="9"/>
+  <circle class="st" cx="850"  cy="230" r="11"/>
+  <circle class="st" cx="1010" cy="60"  r="9"/>
+  <circle class="st" cx="1010" cy="140" r="9"/>
+  <circle class="st" cx="1010" cy="260" r="9"/>
+  <circle class="st" cx="1130" cy="260" r="9"/>
+
+  <!-- roundels -->
+  <g class="mono" font-size="11" font-weight="700" text-anchor="middle" fill="#FFFFFF">
+    <circle cx="600" cy="60"  r="14" fill="#D3311F"/><text x="600" y="64">L1</text>
+    <circle cx="600" cy="140" r="14" fill="#1E5BD8"/><text x="600" y="144">L5</text>
+    <circle cx="600" cy="260" r="14" fill="#12A5A5"/><text x="600" y="264">L8</text>
+    <circle cx="700" cy="330" r="14" fill="#E5559B"/><text x="700" y="334">L2</text>
+    <circle cx="1010" cy="330" r="14" fill="#C9A04A"/><text x="1010" y="334" fill="#17150F">L3</text>
+  </g>
+
+  <!-- trains -->
+  <circle r="7" fill="#EEE8DC" filter="url(#glow)">
+    <animateMotion dur="7s" begin="2.4s" repeatCount="indefinite" rotate="auto"><mpath href="#routeTeal"/></animateMotion>
+  </circle>
+  <circle r="6" fill="#F3EFE6" filter="url(#glow)">
+    <animateMotion dur="9s" begin="3s" repeatCount="indefinite"><mpath href="#routeRed"/></animateMotion>
+  </circle>
+
+  <!-- copy -->
+  <text x="48" y="78" class="mono" font-size="14" letter-spacing="3" fill="#C9A04A">TERMINAL · GUADALAJARA, MX</text>
+  <text x="46" y="158" class="serif" font-size="76" fill="#EEE8DC">Cracksmity</text>
+  <text x="48" y="208" class="serif" font-size="26" fill="#D6CFBF">I build tools for</text>
+  <text x="48" y="242" class="serif" font-size="26" font-style="italic" fill="#E3C27A">the people close to me.</text>
+  <text x="48" y="290" class="mono" font-size="14" fill="#A39D90">Engineer-essayist · Computer Science @ UDG</text>
+
+  <!-- status bar -->
+  <line x1="48" y1="312" x2="540" y2="312" stroke="#262A31"/>
+  <g class="mono" font-size="12" fill="#A39D90">
+    <circle class="blink" cx="54" cy="331" r="4" fill="#23804A"/>
+    <text x="66" y="335">IN SERVICE</text>
+    <text x="170" y="335">L1–L8 + R</text>
+    <text x="270" y="335">NEXT STOP → cracksmity.dev</text>
+  </g>
+</svg>
