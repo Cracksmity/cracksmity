@@ -22,6 +22,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # The pixel-art scene (github.com/Cracksmity/git-trains): one train per top language.
+      # Also runs before snk, and never blocks the train/snake from publishing.
+      - name: Generate pixel train scene
+        uses: Cracksmity/git-trains@main
+        continue-on-error: true
+        with:
+          modo: multi
+          tema: dark
+          etiqueta: STREAK
+          salida: dist
+
       # Fallback: the classic snake
       - uses: Platane/snk@v3
         with:
