@@ -27,6 +27,7 @@ I'm Victor, an engineer-essayist from Guadalajara studying Computer Science at *
   <img src="https://img.shields.io/badge/L6-Creators-7B3FD0?style=flat-square&labelColor=7B3FD0&color=17150F" />
   <img src="https://img.shields.io/badge/L7-Workshop-F08A1C?style=flat-square&labelColor=F08A1C&color=17150F" />
   <img src="https://img.shields.io/badge/L8-Classroom-12A5A5?style=flat-square&labelColor=12A5A5&color=17150F" />
+  <img src="https://img.shields.io/badge/L9-Community-7AB51D?style=flat-square&labelColor=7AB51D&color=17150F" />
   <img src="https://img.shields.io/badge/R-Curiosity-8C8678?style=flat-square&labelColor=8C8678&color=17150F" />
 </p>
 
@@ -40,7 +41,7 @@ I'm Victor, an engineer-essayist from Guadalajara studying Computer Science at *
 | ![L3](https://img.shields.io/badge/L3-C9A04A?style=flat-square) | [**Speculum**](https://cracksmity.dev) | A mirror to think with: your essays are the anchor; philosophy and literature, the reflection. <br/><sub>Expo app + RAG backend (FastAPI · Postgres/pgvector · Claude)</sub> | 🟢 In service |
 | ![L1](https://img.shields.io/badge/L1-D3311F?style=flat-square) ⇄ ![L7](https://img.shields.io/badge/L7-F08A1C?style=flat-square) | [**VibeLoader**](https://github.com/Cracksmity/vibeload) | Downloader/converter GUI on yt-dlp + ffmpeg | 🟢 In service |
 | ![L7](https://img.shields.io/badge/L7-F08A1C?style=flat-square) | [**ByteHauler**](https://github.com/Cracksmity/ByteHauler) | Video compression + OBS automation | 🟢 In service |
-| ![L7](https://img.shields.io/badge/L7-F08A1C?style=flat-square) | [**git-trains**](https://github.com/Cracksmity/git-trains) | GitHub Action that draws a pixel-art train from your activity: wagons, stripe colour and speed follow your commits | 🟢 In service |
+| ![L9](https://img.shields.io/badge/L9-7AB51D?style=flat-square) | [**git-trains**](https://github.com/Cracksmity/git-trains) | GitHub Action that draws a pixel-art train from your activity: wagons, stripe colour and speed follow your commits | 🟢 In service |
 | ![L2](https://img.shields.io/badge/L2-E5559B?style=flat-square) ⇄ ![L4](https://img.shields.io/badge/L4-23804A?style=flat-square) | [**MC-Barra-Salud**](https://github.com/Cracksmity/MC-Barra-Salud) | Floating health bars for Minecraft Bedrock | 🟢 In service |
 | ![R](https://img.shields.io/badge/R-8C8678?style=flat-square) | [**PoliCubo**](https://github.com/Cracksmity/PoliCubo) | 3D political spectrum explorer with AI chat | 🟢 In service |
 | ![L8](https://img.shields.io/badge/L8-12A5A5?style=flat-square) | **AmortizaCore** | *Coming soon* | 🚧 Under construction |
