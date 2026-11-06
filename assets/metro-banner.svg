@@ -73,7 +73,7 @@
   <g class="mono" font-size="12" fill="#A39D90">
     <circle class="blink" cx="54" cy="331" r="4" fill="#23804A"/>
     <text x="66" y="335">IN SERVICE</text>
-    <text x="170" y="335">L1–L8 + R</text>
+    <text x="170" y="335">L1–L9 + R</text>
     <text x="270" y="335">NEXT STOP → cracksmity.dev</text>
   </g>
 </svg>
