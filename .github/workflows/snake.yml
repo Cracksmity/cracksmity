@@ -44,6 +44,7 @@ jobs:
           modo: multi
           tema: dark
           idioma: en
+          calendar: "true"
           salida: dist
           tarjetas: both
           rango: github
