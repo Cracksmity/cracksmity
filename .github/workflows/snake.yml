@@ -37,7 +37,7 @@ jobs:
       # to come from github-readme-stats.vercel.app, which is paused (503 DEPLOYMENT_PAUSED).
       # Also runs before snk, and never blocks the train/snake from publishing.
       - name: Generate pixel train scene and cards
-        uses: Cracksmity/git-trains@3a9cf26e98d98157892b994cb4bc350d046dc883 # main (Jalisco scene)
+        uses: Cracksmity/git-trains@16035471c25383d2f7a08b8996c735f90cbd1dec # main (Jalisco landmarks, #31)
         continue-on-error: true
         with:
           train: jalisco
