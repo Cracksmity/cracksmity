@@ -22,14 +22,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Keep the last published copies as a fallback: the output branch is rebuilt from
-      # dist/ on every run, so a card that fails to regenerate would otherwise vanish.
-      - name: Keep the last scene and cards as fallback
+      # Keep the last published copies as a fallback when the output branch is rebuilt.
+      - name: Keep the last scene, calendar and cards as fallback
         continue-on-error: true
         run: |
           mkdir -p dist
           git fetch --depth=1 origin output
-          for f in tren.svg tarjeta-stats.svg tarjeta-lenguajes.svg; do
+          for f in tren.svg train.svg train-calendar.svg tarjeta-stats.svg tarjeta-lenguajes.svg; do
             git show "origin/output:$f" > "dist/$f" 2>/dev/null || rm -f "dist/$f"
           done
 
@@ -38,22 +37,25 @@ jobs:
       # to come from github-readme-stats.vercel.app, which is paused (503 DEPLOYMENT_PAUSED).
       # Also runs before snk, and never blocks the train/snake from publishing.
       - name: Generate pixel train scene and cards
-        uses: Cracksmity/git-trains@main
+        uses: Cracksmity/git-trains@bc9fbfdef121c9c92e87a9402657d0e895771e3f # Jalisco sobre rieles
         continue-on-error: true
         with:
-          modo: multi
-          tema: dark
-          idioma: en
+          train: jalisco
+          skyline: jalisco
+          mode: multi
+          theme: dark
+          language: en
+          label: RACHA
           calendar: "true"
-          salida: dist
-          tarjetas: both
-          rango: github
-          borde: "false"
-          color-fondo: "0F1115"
-          color-titulo: "C9A04A"
-          color-icono: "12A5A5"
-          color-texto: "EEE8DC"
-          color-anillo: "C9A04A"
+          output-dir: dist
+          cards: both
+          rank: github
+          border: "false"
+          color-background: "0F1115"
+          color-title: "C9A04A"
+          color-icon: "12A5A5"
+          color-text: "EEE8DC"
+          color-ring: "C9A04A"
 
       # Fallback: the classic snake
       - uses: Platane/snk@v3
