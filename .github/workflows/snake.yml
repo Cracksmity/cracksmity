@@ -28,7 +28,7 @@ jobs:
         run: |
           mkdir -p dist
           git fetch --depth=1 origin output
-          for f in tren.svg train.svg train-calendar.svg tarjeta-stats.svg tarjeta-lenguajes.svg; do
+          for f in train.svg train-calendar.svg card-stats.svg card-languages.svg; do
             git show "origin/output:$f" > "dist/$f" 2>/dev/null || rm -f "dist/$f"
           done
 
@@ -37,7 +37,7 @@ jobs:
       # to come from github-readme-stats.vercel.app, which is paused (503 DEPLOYMENT_PAUSED).
       # Also runs before snk, and never blocks the train/snake from publishing.
       - name: Generate pixel train scene and cards
-        uses: Cracksmity/git-trains@bc9fbfdef121c9c92e87a9402657d0e895771e3f # Jalisco sobre rieles
+        uses: Cracksmity/git-trains@3a9cf26e98d98157892b994cb4bc350d046dc883 # main (Jalisco scene)
         continue-on-error: true
         with:
           train: jalisco
@@ -45,7 +45,6 @@ jobs:
           mode: multi
           theme: dark
           language: en
-          label: RACHA
           calendar: "true"
           output-dir: dist
           cards: both
