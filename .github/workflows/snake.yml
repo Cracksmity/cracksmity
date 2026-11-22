@@ -2,7 +2,7 @@ name: Generate snake & train
 
 on:
   schedule:
-    - cron: "0 */3 * * *" # every 3 hours, so the Jalisco weather stays current
+    - cron: "0 * * * *" # every hour, so Guadalajara's day and night and the weather stay current
   workflow_dispatch:
   push:
     branches: [main]
@@ -37,14 +37,14 @@ jobs:
       # to come from github-readme-stats.vercel.app, which is paused (503 DEPLOYMENT_PAUSED).
       # Also runs before snk, and never blocks the train/snake from publishing.
       - name: Generate pixel train scene and cards
-        uses: Cracksmity/git-trains@32a31706148f95a6968702aa057fceb5351a8cb1 # main (Jalisco weather, #34)
+        uses: Cracksmity/git-trains@10d7f402d4772ee8345d1f7c42e4fbcc47bf91fb # main (theme local, #35)
         continue-on-error: true
         with:
           train: jalisco
           skyline: jalisco
           mode: multi
           weather: live
-          theme: dark
+          theme: local
           language: en
           calendar: "true"
           output-dir: dist
