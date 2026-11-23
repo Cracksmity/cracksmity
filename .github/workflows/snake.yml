@@ -37,11 +37,11 @@ jobs:
       # to come from github-readme-stats.vercel.app, which is paused (503 DEPLOYMENT_PAUSED).
       # Also runs before snk, and never blocks the train/snake from publishing.
       - name: Generate pixel train scene and cards
-        uses: Cracksmity/git-trains@5c09f5fb5470f28f229073818eec3bd25a8ef675 # main (snow, wind, haze, temperatures #36; credit #37)
+        uses: Cracksmity/git-trains@c9ba1e4d5357e2a5f662abd020a6250aaf360c6a # main (Sayula variant #38)
         continue-on-error: true
         with:
           train: jalisco
-          skyline: jalisco
+          skyline: jalisco-sayula
           mode: multi
           weather: live
           theme: local
